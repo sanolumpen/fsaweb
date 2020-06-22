@@ -1,0 +1,174 @@
+.footer-area{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    background-image: url(../img/gallery/footer_bg.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    @media #{$big_screen}{
+        background-size: 70%;
+      }
+    @media #{$big_screen2}{
+        background-size: 80%;
+      }
+    @media #{$big_screen2}{
+        background-size: 80%;
+      }
+    @media #{$big_screen3}{
+        background-size: 80%;
+      }
+    @media #{$big_screen4}{
+        background-size: 63%;
+      }
+
+    @media #{$tab2}{
+        background-image: none;
+      }
+    // Right Content
+    .footer-caption{
+        width: 68%;
+        background: #c6a16e;
+        padding: 50px 260px 50px 100px;
+        margin-top: 150px;
+        &.footer-caption2{
+            @media #{$xs}{
+                margin-top: 0px;
+            } 
+        }
+        @media #{$xs}{
+            padding: 50px 15px 40px 15px;
+        }
+        @media #{$sm}{
+            padding: 50px 15px 40px 15px;
+        }
+        @media #{$md}{
+            padding: 50px 15px 40px 15px;
+        }
+        @media #{$big_screen}{
+            padding: 50px 60px 50px 100px;
+        }
+        @media #{$md}{
+            padding: 50px 60px 50px 100px;
+        }
+        @media #{$lg}{
+            padding: 50px 100px 50px 100px;
+        }
+        @media #{$tab2}{
+            width: 100%;
+          }
+        
+        .footer-tittle{
+            h3{
+                font-size: 60px;
+                display: block;
+                color:#fff;
+                font-weight: 600;
+                line-height: 1.1;
+                margin-bottom: 55px;
+                padding-bottom: 55px;
+                border-bottom: 1px solid#d6bc97;
+                @media #{$xs}{
+                    font-size: 31px;
+                    line-height: 1.2;
+                    margin-bottom: 40px;
+                    padding-bottom: 42px;
+                }
+            }
+        }
+        // Footer Menu
+        .footer-menu{
+            .single-menu{
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                @media #{$xs}{
+                    display: block;
+                  }
+                .single-menu1{
+                    width: 36%;
+                    @media #{$xs}{
+                        width: 100%;
+                      }
+                    @media #{$sm}{
+                        width: 62%;
+                      }
+                    @media #{$md}{
+                        width: 45%;
+                      }
+                }
+                .single-menu2{
+                    width: 25%;
+                    @media #{$xs}{
+                        width: 50%;
+                      }
+                      @media #{$sm}{
+                        width: 50%;
+                      }
+                }
+                .single-menu3{
+                    width: 25%;
+                    @media #{$xs}{
+                        width: 50%;
+                    }
+                    @media #{$sm}{
+                        width: 50%;
+                      }
+                }
+                .single-footer-caption{
+                    .footer-tittle{
+                        h4{
+                            color: #fff;
+                            font-size: 25px;
+                            margin-bottom: 29px;
+                            font-weight: 400;
+                            text-transform: capitalize;
+                        }
+                        .footer-pera{
+                            p{
+                                color: #fff;
+                            }
+                        }
+                        ul{
+                            li{
+                                @include transition(.3s);
+                                margin-bottom: 7px;
+                                font-size: 16px;
+                                &:hover{
+                                    padding-left: 5px;
+                                }
+                            }
+                        }
+                    }
+                    .footer-social{
+                        a{
+                            color:#fff;
+                            padding: 0 6px;
+                            font-size: 14px;
+                            &:hover{
+                                color:#0b1416;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copyright{
+            p{
+                color: #fff;
+                a{
+                    &:hover{
+                        color:#0b1416;
+                    }
+                }
+            }
+        }
+    }
+}

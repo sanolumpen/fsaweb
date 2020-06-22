@@ -1,0 +1,84 @@
+.clients-testimonial{
+    .clients-speech-active{
+
+        // arrow
+        & button{
+            &.slick-arrow {
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                transform: translateY(-50%);
+                background: none;
+                border: 0;
+                padding: 0;
+                z-index: 2;
+                cursor: pointer;
+                background: none;
+                i{
+                    font-size: 30px;
+                    color: #c6a16e;
+                    @media #{$xs}{
+                        font-size: 19px;
+                    }
+                    @media #{$sm}{
+                        font-size: 19px;
+                    }
+                    
+
+                }
+            }
+            &.slick-next {
+                left: auto;
+                right: 0px;
+            }
+        }
+
+
+        // slick-dot style
+        &.dot-style{
+            .slick-dots {
+                text-align: center;
+                bottom: -93px;
+                left: 0;
+                right: 0;
+                position: absolute;
+            }
+            .slick-dots li {
+                display: inline-block;
+            }
+            .slick-dots button {
+                // padding: 0;
+                margin-right: 10px;
+                cursor: pointer;
+                background:none;
+                color: #fff;
+                border: 0;
+                font-size: 16px;
+
+            }
+            .slick-active button{
+                position: relative;
+                top: -8px;
+                text-decoration: underline;
+                text-decoration-style: double;
+                padding-bottom: 5px;
+            }
+        }
+        // End dot style
+
+        // slider img
+        .single-clients-speech{
+            img{
+                width: 100%;
+                }
+        }
+
+
+
+
+    }   
+}
+
+
+
+

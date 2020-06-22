@@ -1,0 +1,126 @@
+.testimonial-area{
+    .testimonial-caption{
+        background: #0b1416;
+        .testimonial-top-cap{
+            border: 1px solid #2c2815;
+            padding: 75px 30px 50px 30px;
+            @media #{$xs}{
+                padding: 44px 13px 14px 13px;
+            }
+            & img{
+                margin-bottom: 50px;
+                width: auto;
+                display: inline-block;
+                @media #{$md}{
+                    margin-bottom: 30px;
+                }
+                @media #{$xs}{
+                    margin-bottom: 30px;
+                }
+                @media #{$sm}{
+                    margin-bottom: 30px;
+                }
+
+            }
+            & p{
+                color: #fff;
+                font-size: 24px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+                @media #{$md}{
+                    font-size: 20px;
+                }
+                @media #{$md}{
+                    font-size: 18px;
+                    margin-bottom: 30px;
+                }
+                @media #{$xs}{
+                    margin-bottom: 30px;
+                    font-size: 15px;
+                }
+            }
+        }
+        .testimonial-founder{
+            .founder-img{
+
+            }
+            .founder-text{
+                margin-left: 20px;
+                & span{
+                    color:#fff;
+                }
+                & p{
+                    color:#fff;
+                    font-weight:500;
+                    line-height:1.5 ;
+                }
+            }
+        }
+        
+    }
+
+}
+
+/* Homepage1 Testimonial */
+.h1-testimonial-active{
+        // arrow
+            button{
+            &.slick-arrow {
+                position: absolute;
+                left: 0px;
+                bottom: 0;
+                background: none;
+                border: 0;
+                padding: 0;
+                z-index: 2;
+                cursor: pointer;
+                background: none;
+                right: 0;
+                margin: 0 auto;
+                i{
+                    font-size: 14px;
+                    color: #a0a0a0
+
+                }
+            }
+            &.slick-prev {
+                display: none !important;
+            }
+            &.slick-next {
+                left: 64px;
+bottom: -79px;
+            }
+        }
+            
+        // slick-dot style
+        &.dot-style{
+            .slick-dots {
+                text-align: center;
+                bottom: -79px;
+                left: 0;
+                right: 0;
+                position: absolute;
+            }
+            .slick-dots li {
+                display: inline-block;
+            }
+            .slick-dots button {
+                // padding: 0;
+                cursor: pointer;
+                background:none;
+                color: #a0a0a0;
+                border: 0;
+                font-size: 16px;
+
+            }
+            .slick-active button{
+                color: #fff;
+            }
+        }
+        // End dot style
+}
+
+
+.slick-initialized .slick-slide {
+    outline: 0;
+}
