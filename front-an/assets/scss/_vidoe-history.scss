@@ -1,0 +1,136 @@
+.history-video-area{
+        .video-bg{
+            position: relative;
+            z-index: 1;
+            @media #{$md}{
+                margin-bottom: 80px;
+            }
+            @media #{$sm}{
+                margin-bottom: 50px;
+            }
+            @media #{$xs}{
+                margin-bottom: 50px;
+            }
+            img{
+                width: 100%;
+            }
+            .video-icon{
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 50%;
+                text-align: center;
+                transform: translateY(-50%);
+                a{
+                     background:#fff;
+                     color: #c68b55;
+                     width: 80px;
+                     height: 80px;
+                     display: inline-block;
+                     text-align: center;
+                     line-height: 80px;
+                     border-radius: 50%;
+                } 
+                // btn Animated Style
+                a.btn-icon{
+                    position: relative;
+                  &::before{
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    top: -2px;
+                    left: -2px;
+                    bottom: -2px;
+                    right: -2px;
+                    border-radius: inherit;
+                    border: 1px solid #c68b55;
+                    -webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+                    animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+                  }
+                  /* Animations */
+                    @-webkit-keyframes btnIconRipple { 
+                        0% { border-width: 4px;
+                            -webkit-transform: scale(1);
+                            transform: scale(1); }
+                        50% { 
+                            border-width: 1px;
+                            -webkit-transform: scale(1.50);
+                            transform: scale(1.50); 
+                            }
+                        80% { 
+                            border-width: 1px;
+                            -webkit-transform: scale(1.90);
+                            transform: scale(1.90); 
+                            }
+                        100% { 
+                            opacity: 0; }
+                        }
+                    /* End Animated */
+                    &:hover{
+                        // background: #c6a16e;
+                        background: #234249;
+                        color: #fff;
+                    }
+                }
+             }
+        }
+        // caption Style
+        .video-history-cap{
+            background: #f4efe6;
+            padding:60px 70px 60px 161px;
+            position: relative;
+            margin-left: -130px;
+            margin-top: -62px;
+            z-index: 0;
+            @media #{$lg}{
+                padding: 42px 34px 34px 131px;
+                margin-left: -106px;
+                margin-top: -41px;
+            }
+            @media #{$xs}{
+                margin-left: 0px;
+                padding: 50px 16px 50px 16px;
+                margin-top: -30px;
+            }
+            @media #{$sm}{
+                margin-left: 0px;
+                padding: 50px 20px 50px 25px;
+                margin-top: -46px;
+            }
+            @media #{$md}{
+                margin-left: 0px;
+                padding:50px 48px 50px 59px;
+            }
+            h3{
+                color:#161922;
+                font-size: 60px;
+                font-weight: 600;
+                line-height: 1.1;
+                margin-bottom: 28px;
+                @media #{$lg}{
+                    margin-bottom: 18px;
+                }
+
+                @media #{$xs}{
+                    font-size: 42px;
+                }
+                @media #{$sm}{
+                    font-size: 42px;
+                }
+            }
+            p{
+                color: #161922;
+                font-size: 16px;
+                margin-bottom: 42px;
+                @media #{$lg}{
+                    margin-bottom: 28px;
+                }
+            }
+            a{
+    
+            }
+        }
+    // }
+
+}
+

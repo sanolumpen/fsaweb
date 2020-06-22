@@ -1,0 +1,241 @@
+
+.slider-height {
+    min-height: 830px;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover;
+    @media #{$lg}{
+        min-height: 600px;
+    }
+    @media #{$md}{
+        min-height: 500px;
+    }
+    @media #{$sm}{
+        min-height: 450px;
+    }
+    @media #{$xs}{
+        min-height: 350px;
+    }
+}
+
+.slider-height2{
+    min-height: 350px;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    @media #{$xs}{
+        min-height: 300px;
+    }
+}
+
+// Another Hero Page
+.slider-area{
+    .hero-cap{
+        & h2{
+            color: #fff;
+            font-size: 50px;
+            font-weight: 900;
+            text-transform: capitalize;
+            @media #{$sm}{
+                font-size: 29px;
+            }
+            @media #{$xs}{
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+
+.btn1 {
+    padding: 25px 0px;
+    @media #{$md}{
+        padding: 25px 0;
+    }
+}
+
+.slider-area{
+    padding-left: 100px;
+    margin-top: -1px;
+    position: relative;
+    @media #{$lg}{
+        padding-left: 100px;
+    }
+    @media #{$md}{
+        padding-left: 70px;
+    }
+    @media #{$sm}{
+        padding-left: 70px;
+    }
+    @media #{$xs}{
+        padding-left: 0px;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 67%;
+        background: #fff;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        @media #{$xs}{
+           background: none;
+        }
+        @media #{$sm}{
+           background: none;
+        }
+    }
+    .hero__caption{
+       
+        margin-left: -16%;
+       
+        @media #{$xs}{
+            margin-left: 0%;
+        }
+       
+        @media #{$sm}{
+            margin-left: 0%;
+        }
+        @media #{$md}{
+            margin-left: 0%;
+        }
+       
+        @media #{$lg}{
+            margin-left: 7%;
+        }
+        @media #{$big_screen}{
+            margin-left: 7%;
+        }
+        @media #{$big_screen3}{
+            margin-left: 2%;
+        }
+        @media #{$big_screen4}{
+            margin-left: 0%;
+        }
+        & h1{
+            font-size: 100px;
+            font-weight: 600;
+            margin-bottom: 14px;
+            color:#ffffff;
+            line-height: 1.1;
+            @media #{$lg}{
+                font-size: 60px;
+                line-height: 1.2;
+            }
+            @media #{$md}{
+                font-size: 50px;
+                line-height: 1.2;
+            }
+            @media #{$xs}{
+                font-size: 35px;
+                line-height: 1.2;
+            }
+        }
+        & span{
+            font-size: 35px;
+            margin-bottom: 39px;
+            margin-bottom: 25px;
+            font-family: $font_3;
+            display: block;
+            padding-left: 106px;
+            color: #c6a16e;
+            position: relative;
+            @media #{$xs}{
+                padding-left: 0px;
+                font-size: 24px;
+              }
+              @media #{$sm}{
+                padding-left:0px;
+                font-size: 24px;
+              }
+           &::before{
+                position: absolute;
+                content: "";
+                width: 72px;
+                height: 2px;
+                background:#c6a16e;
+                top: 0;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                @media #{$xs}{
+                  display: none;
+                }
+                @media #{$sm}{
+                    display: none;
+                }
+           }
+        }
+    }
+    //Arrow
+    .youtube-area .testmonial-nav button {
+        position: absolute;
+        color: #333;
+        border: none;
+        font-size: 21px;
+        background: #f3f4f8;
+        width: 55px;
+        height: 55px;
+        border-radius: 10px;
+        color: #bdbdbd;
+        left: -421px;
+        top: -114px;
+        cursor: pointer;
+    }
+
+}
+
+//
+
+.hero-overly {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(1, 10, 28,  0.3);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+// arrow
+.slider-active {
+    & button{
+        &.slick-arrow {
+            position: absolute;
+            left: 80px;
+            bottom: 0;
+            left: 0;
+            background: none;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            opacity: 1;
+            visibility: visible;
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+            background: #fff;
+            i{
+                font-size: 20px;
+                line-height: 60px;
+                color: #000;
+
+            }
+        }
+        &.slick-next {
+            left: 63px
+        }
+    }
+    
+}
